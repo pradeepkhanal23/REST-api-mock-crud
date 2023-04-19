@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?familyå=Delicious+Handrawn&family=Edu+NSW+ACT+Foundation:wght@400;700&family=Montserrat+Alternates&family=Montserrat:wght@400;700&family=Poppins:wght@300;400;700&family=Righteous&family=Tilt+Neon:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Tilt Neon", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#todo-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+input {
+  margin: 0.5rem auto;
+  padding: 0.5rem 3rem;
+  font-size: 1.5rem;
+}
+
+button {
+  padding: 0.5rem 3rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+h2 {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.todo-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.todo-list div {
+  flex: 1 1 auto;
+  margin: 1rem;
+  border: 1px solid black;
+  padding: 0.5rem 5rem;
+  cursor: pointer;
+}
+
+.done {
+  background-color: grey;
+  color: white;
+}
+
+@media screen and (max-width: 560px) {
+  #todo-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+}
